@@ -122,9 +122,9 @@ gulp.task('default', ['serve']);
 gulp.task( 'deploy', function () {
 
 	var conn = ftp.create( {
-		host:     '88.99.94.73',
-		user:     'lekki135',
-		password: 'sNhW49Y1c8',
+		host:     '88.99.93.73',
+		user:     'name',
+		password: 'gjgjgjgj',
 		log:      gutil.log
 	} );
 
