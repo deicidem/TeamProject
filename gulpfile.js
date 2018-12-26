@@ -1,4 +1,3 @@
-'use strict';
 
 var gulp = require('gulp');
 var bs = require('browser-sync');
@@ -107,7 +106,7 @@ gulp.task('htmlhint', function() {
     gulp.src('src/*.html')
         .pipe(htmlhint())
         .pipe(htmlhint.reporter())
-        .pipe(htmlhint.failReporter({ suppress: true }))
+        .pipe(htmlhint.failReporter({ suppress: true }));
 });
 
 //очищает кэш
