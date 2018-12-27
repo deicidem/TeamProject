@@ -55,7 +55,7 @@ gulp.task('cleanCSS', () => {
 });
 
 gulp.task('imagemin', function () {
-    return gulp.src('src/img/dev/*')
+    return gulp.src('src/img/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}]

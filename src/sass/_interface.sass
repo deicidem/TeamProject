@@ -1,0 +1,30 @@
+$text: #626262
+$active: #b4ad9e
+body
+  margin: 0
+  padding: 0 15px
+  color: $text
+  font-family: "Playfair Display", sans-serif
+
+*
+  outline: none
+  box-sizing: border-box
+
+.title
+  font-size: 30px
+  line-height: normal
+  margin-bottom: 34px
+  font-weight: 400
+a
+  display: block
+  text-decoration: none
+  color: $active
+  transition: all 0.5s
+  &:hover
+    color: lighten($active, 20)
+@media (max-width: 768px)
+  .title
+    font-size: 24px
+    margin-bottom: 20px
+    
+    

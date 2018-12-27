@@ -1,0 +1,54 @@
+.post
+  flex-basis: 46%
+  margin-bottom: 132px
+  &s
+    max-width: 900px
+    display: flex
+    margin: auto
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__img
+    margin-bottom: 32px
+    max-width: 100%
+  &__category
+    font-family: Ubuntu, sans-serif 
+    font-size: 14px
+    font-weight: 300
+    text-transform: uppercase
+    margin-bottom: 28px
+    
+  &__description
+    font-size: 14px
+    line-height: 24px
+    
+  &_first
+    max-width: 1070px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 90px !important
+    .post
+      &__content
+        max-width: 900px
+        margin: auto
+      &__description
+        margin-bottom: 52px
+      &__readmore
+        font-family: Ubuntu, sans-serif
+        font-size: 14px
+        font-weight: 300
+        text-transform: uppercase
+        margin-bottom: 28px
+@media (max-width: 768px)
+  .post
+    margin-bottom: 60px
+    &__img 
+      margin-bottom: 15px
+    &__category
+      margin-bottom: 15px
+@media (max-width: 578px)
+  .post
+    flex-basis: 100%
+    &__img
+      width: 100%
+      

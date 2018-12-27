@@ -1,0 +1,107 @@
+.header
+  padding-top: 68px
+  display: flex
+  position: relative
+  max-width: 1070px
+  justify-content: space-between
+  align-items: center
+  margin: auto
+  padding-bottom: 70px
+  
+  &-nav
+    flex-basis: 50%
+
+    ul
+      justify-content: space-between
+      margin: 0
+      padding: 0
+      display: flex
+      list-style: none
+
+      li
+        font-size: 14px
+        
+        font-weight: 400
+        line-height: 24px
+        text-transform: uppercase
+        a
+          color: inherit
+          &:hover
+            color: lighten($active, 20)
+@media (max-width: 768px)
+  .header
+    padding-top: 30px
+    padding-bottom: 60px
+    .burger
+      position: fixed
+      z-index: 5
+      right: 30px
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      background: #fff
+      box-shadow: 0 0 8px 1px rgba(#000, 0.5)
+      transition: all 0.5s
+      &::after, span, &::before
+        transition: all 0.5s
+        position: absolute
+        transform-origin: center center
+        width: 20px
+        height: 2px
+        margin-top: -1px
+        top: 50%
+        left: 50%
+        border-radius: 5px
+        margin-left: -10px
+        background: #000
+      &::after
+        content: ''        
+        top: 35%
+      &::before
+        content: ''
+        top: 65%
+        left: 50%
+    .cross 
+      span
+        opacity: 0
+      &::after
+        transform: rotate(135deg)
+        top: 50%
+      &::before
+        transform: rotate(-135deg)
+        top: 50%
+
+
+        
+    &-nav
+      transition: all 1s
+      position: fixed
+      width: 0
+      height: 100vh
+      top: 0
+      left: 0
+      overflow: hidden
+      ul
+        transition: all 0.5s
+        padding-top: 50px
+        width: 35%
+        background-color: #fff
+        height: 100%
+        display: block
+        li
+          margin-left: 50px
+          font-size: 22px
+          margin-bottom: 40px
+          overflow: hidden
+      &_active
+        width: 100%
+        ul
+          box-shadow: 0px 0px 20px 1px rgba(#000, 0.5)
+@media (max-width: 576px)
+  .header
+    &-nav
+      ul
+        width: 50%  
+        li
+          font-size: 16px
+          margin-left: 30px
