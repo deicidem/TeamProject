@@ -83,6 +83,7 @@ let message = {};
   
   function ajaxRequest(event){
     event.preventDefault();
+    statusMessage.innerHTML = message.success;
     this.insertBefore(statusMessage, this.children[0]);
 
     // AJAX
@@ -94,18 +95,18 @@ let message = {};
 
     request.send(formData);
 
-    request.onreadystatechange = () => {
-      if (request.readyState < 4) {
-        statusMessage.innerHTML = message.loading;
-      } else if (request.readyState === 4) {
-        if (request.status == 200 && request.status < 300) {
-          statusMessage.innerHTML = message.success;
-          // Добавляем контент
-        } else {
-          statusMessage.innerHTML = message.error;
-        }
-      }
-    };
+    // request.onreadystatechange = () => {
+    //   if (request.readyState < 4) {
+    //     statusMessage.innerHTML = message.loading;
+    //   } else if (request.readyState === 4) {
+    //     if (request.status == 200 && request.status < 300) {
+    //       statusMessage.innerHTML = message.success;
+    //       // Добавляем контент
+    //     } else {
+    //       statusMessage.innerHTML = message.error;
+    //     }
+    //   }
+    // };
     for (let i = 0; i < input.length; i++) {
       input[i].value = '';
       // Очищаем Поля Ввода
