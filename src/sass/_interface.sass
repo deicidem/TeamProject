@@ -2,19 +2,29 @@ $text: #626262
 $active: #b4ad9e
 body
   margin: 0
-  padding: 0 15px
+  padding: 0
   color: $text
   font-family: "Playfair Display", sans-serif
 
 *
   outline: none
   box-sizing: border-box
-
+.hidden
+  height: 0
+.more
+  overflow: hidden
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
 .title
-  font-size: 30px
+  font-size: 28px
   line-height: normal
   margin-bottom: 34px
   font-weight: 400
+  &_dark
+    color: #333333
+    text-align: center
 a
   display: block
   text-decoration: none
@@ -22,6 +32,22 @@ a
   transition: all 0.5s
   &:hover
     color: lighten($active, 20)
+.loadmore
+  display: block
+  background: transparent
+  font-size: 20px
+  font-family: inherit
+  color: inherit
+  margin: auto
+  border: 1px solid $text
+  padding: 15px 34px
+  transition: all 0.5s
+  margin-bottom: 50px
+  &:hover
+    cursor: pointer
+    box-shadow: 0 0 10px 1px rgba(#3c3c3c, .5)
+.status
+  color: #00ff00
 @media (max-width: 768px)
   .title
     font-size: 24px

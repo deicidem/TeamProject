@@ -7,33 +7,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="src/css/main.css">
   <title>Minimo</title>
 </head>
 
 <body>
   <header class="header">
     <div class="logo">
-      <img src="img/logo.png" alt="Логотип компании Minimo">
+      <img src="dist/img/logo.png" alt="Логотип компании Minimo">
     </div>
     <div class="burger">
-        <span></span>
-      </div>
-    <nav class="header-nav">      
+      <span></span>
+    </div>
+    <nav class="header-nav">
       <ul>
-        <li><a href="#">lifestyle</a> </li>
-        <li><a href="#">photodiary</a> </li>
-        <li><a href="#">music</a></li>
-        <li><a href="#">travel</a></li>
+        <li><a href="#lifestyle">lifestyle</a> </li>
+        <li><a href="#photodiary">photodiary</a> </li>
+        <li><a href="#music">music</a></li>
+        <li><a href="#travel">travel</a></li>
       </ul>
     </nav>
   </header>
 
-  <article class="post post_first">
-    <img class="post__img" src="img/first-post.png" alt="Заголовок первого поста">
+  <article class="post post_first" id="photodiary">
+    <img class="post__img" src="dist/img/first-post.png" alt="Заголовок первого поста">
     <!-- /.post__img -->
     <div class="post__content">
-      <a href="#"class="post__category">photodiary</a>
+      <a href="#" class="post__category">photodiary</a>
       <!-- /.post__category -->
       <h2 class="title">The perfect weekend getaway</h2>
       <!-- /.title -->
@@ -54,10 +55,10 @@
   <!-- /.post post_first -->
 
   <section class="posts">
-    <article class="post">
-      <img class="post__img" src="img/post-1.png" alt="Изображение поста">
+    <article class="post" id="lifestyle">
+      <img class="post__img" src="dist/img/post-1.png" alt="Изображение поста">
       <!-- /.post__img -->
-      <a href="#"class="post__category">lifestyle</a>
+      <a href="#" class="post__category">lifestyle</a>
       <!-- /.post__category -->
       <div class="title">More than just a music festival </div>
       <!-- /.title -->
@@ -67,9 +68,9 @@
     </article>
     <!-- /.post -->
     <article class="post">
-      <img class="post__img" src="img/post-2.png" alt="Изображение поста">
+      <img class="post__img" src="dist/img/post-2.png" alt="Изображение поста">
       <!-- /.post__img -->
-      <a href="#"class="post__category">lifestyle</a>
+      <a href="#" class="post__category">lifestyle</a>
       <!-- /.post__category -->
       <div class="title">Life tastes better with coffee</div>
       <!-- /.title -->
@@ -78,10 +79,10 @@
       <!-- /.post_description -->
     </article>
     <!-- /.post -->
-    <article class="post">
-      <img class="post__img" src="img/post-3.png" alt="Изображение поста">
+    <article class="post" id="music">
+      <img class="post__img" src="dist/img/post-3.png" alt="Изображение поста">
       <!-- /.post__img -->
-      <a href="#"class="post__category">photograhy</a>
+      <a href="#" class="post__category">music</a>
       <!-- /.post__category -->
       <div class="title">American dream</div>
       <!-- /.title -->
@@ -91,9 +92,9 @@
     </article>
     <!-- /.post -->
     <article class="post">
-      <img class="post__img" src="img/post-4.png" alt="Изображение поста">
+      <img class="post__img" src="dist/img/post-4.png" alt="Изображение поста">
       <!-- /.post__img -->
-      <a href="#"class="post__category">photograhy</a>
+      <a href="#" class="post__category">music</a>
       <!-- /.post__category -->
       <div class="title">A day exploring the Alps</div>
       <!-- /.title -->
@@ -105,15 +106,120 @@
   </section>
   <!-- /.posts -->
 
-<script>
-  let burger = document.querySelector('.burger');
-  let menu = document.querySelector('.header-nav');
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('cross');
-    menu.classList.toggle('header-nav_active');
-    
-  });
-</script>
+  <section class="newsletter">
+    <h2 class="title title_dark">Sign up for our newsletter!</h2>
+    <form action="#" class="newsletter__form" id="form">
+      <input required type="email" class="newsletter__form__input" name="email" placeholder="Enter a valid email address">
+      <button class="newsletter__form__button"><img src="dist/img/arrow.svg" alt="Отправить"></button>
+    </form>
+  </section>
+
+  <section class="posts">
+    <article class="post" id="travel">
+      <img class="post__img" src="dist/img/post-5.png" alt="Изображение поста">
+      <!-- /.post__img -->
+      <a href="#" class="post__category">travel</a>
+      <!-- /.post__category -->
+      <div class="title">More than just a music festival </div>
+      <!-- /.title -->
+      <div class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+      <!-- /.post_description -->
+    </article>
+    <!-- /.post -->
+    <article class="post">
+      <img class="post__img" src="dist/img/post-6.png" alt="Изображение поста">
+      <!-- /.post__img -->
+      <a href="#" class="post__category">travel</a>
+      <!-- /.post__category -->
+      <div class="title">Life tastes better with coffee</div>
+      <!-- /.title -->
+      <div class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+      <!-- /.post_description -->
+
+    </article>
+    <!-- /.post -->
+    <div class="more">
+      <article class="post">
+        <img class="post__img" src="dist/img/post-1.png" alt="Изображение поста">
+        <!-- /.post__img -->
+        <a href="#" class="post__category">lifestyle</a>
+        <!-- /.post__category -->
+        <div class="title">Top 10 song for running </div>
+        <!-- /.title -->
+        <div class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris</div>
+        <!-- /.post_description -->
+      </article>
+      <!-- /.post -->
+      <article class="post">
+        <img class="post__img" src="dist/img/post-3.png" alt="Изображение поста">
+        <!-- /.post__img -->
+        <a href="#" class="post__category">lifestyle</a>
+        <!-- /.post__category -->
+        <div class="title">Life tastes better with coffee</div>
+        <!-- /.title -->
+        <div class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris</div>
+        <!-- /.post_description -->
+
+      </article>
+      <!-- /.post -->
+
+      <article class="post">
+        <img class="post__img" src="dist/img/post-2.png" alt="Изображение поста">
+        <!-- /.post__img -->
+        <a href="#" class="post__category">lifestyle</a>
+        <!-- /.post__category -->
+        <div class="title">Cold winter days </div>
+        <!-- /.title -->
+        <div class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris</div>
+        <!-- /.post_description -->
+      </article>
+      <!-- /.post -->
+      <article class="post">
+        <img class="post__img" src="dist/img/post-5.png" alt="Изображение поста">
+        <!-- /.post__img -->
+        <a href="#" class="post__category">lifestyle</a>
+        <!-- /.post__category -->
+        <div class="title">American dream</div>
+        <!-- /.title -->
+        <div class="post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris</div>
+        <!-- /.post_description -->
+
+      </article>
+      <!-- /.post -->
+    </div>
+  </section>
+
+  <button class="loadmore">Load more</button>
+
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__link">
+        <a href="#" class="footer__item">Terms and conditions</a>
+        <a href="#" class="footer__item">Privacy</a>
+      </div>
+      <!-- /.footer__link -->
+      <div class="footer__link">
+        <a href="#" class="footer__item">Follow</a>
+        <a href="#" class="footer__item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="footer__item"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="footer__item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      <!-- /.footer__link -->
+    </div>
+  </footer>
+
+  <script src="dist/js/main.js"></script>
 </body>
 
 </html>

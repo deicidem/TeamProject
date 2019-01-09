@@ -36,8 +36,7 @@ gulp.task('uglify', function (cb) {
         gulp.src('src/js/main.js'),
         uglify(),
         gulp.dest('dist/js')
-    ],
-    cb
+    ], cb
   );
 });
 

@@ -1,0 +1,47 @@
+.newsletter
+  padding-right: 15px
+  padding-left: 15px
+  background-color: #f0f0f0
+  padding-top: 50px
+  padding-bottom: 50px
+  margin-bottom: 30px
+  z-index: 0
+  &__form
+    display: flex
+    margin: auto
+    justify-content: space-between
+    max-width: 400px
+    align-items: center
+    position: relative
+    z-index: 0
+    &::before
+      z-index: -1
+      content: ''
+      height: 3px
+      width: 100%
+      bottom: -5px
+      left: 0
+      position: absolute
+      background-color: #3c3c3c
+    &__input
+      flex-basis: 70%
+      background-color: transparent
+      border: none
+      color: $text
+      font-family: "Playfair Display"
+      font-size: 14px
+      line-height: 24px
+    &__button
+      background-color: transparent
+      border: none
+      padding: 0
+      height: 40px
+      transition: all 0.5s
+      img
+        transition: all 0.3s
+        height: 100%
+        width: 35px
+      &:hover
+        cursor: pointer
+        img
+          height: 80%

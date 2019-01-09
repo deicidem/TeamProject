@@ -1,0 +1,28 @@
+.footer
+  padding-top: 40px
+  padding-bottom: 40px
+  padding-right: 15px
+  padding-left: 15px
+  background: #f0f0f0
+  &__content
+    max-width: 991px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__link
+    display: flex
+    align-items: center
+  &__item
+    margin-right: 20px
+    color: #3c3c3c
+    &:hover
+      color: $active
+@media (max-width: 768px)
+  .footer
+    padding-top: 30px
+    padding-bottom: 30px
+@media (max-width: 578px)
+  .footer
+    &__link
+      font-size: 12px
