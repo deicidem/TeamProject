@@ -6,6 +6,7 @@ body {
 }
 
 * {
+  scroll-behavior: smooth;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -43,6 +44,7 @@ body {
 }
 
 a {
+  scroll-behavior: smooth;
   display: block;
   text-decoration: none;
   color: #b4ad9e;

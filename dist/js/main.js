@@ -15,12 +15,14 @@ window.addEventListener('DOMContentLoaded', function () {
     this.style.display = 'none';
     animate({
       duration: 2000,
-      timing: makeEaseInOut(quad),
+      timing: function(timeFraction){
+        return timeFraction;
+      },
       draw: function (progress) {
         morePosts.style.height = progress * height + 'px';
-        window.scrollBy(0, height);
       }
     });
+    
   });
 
   function quad(progress) {
@@ -35,20 +37,20 @@ window.addEventListener('DOMContentLoaded', function () {
         return (2 - timing(2 * (1 - timeFraction))) / 2;
     };
   }
-  menu.addEventListener('click', (event) => {
-    let target = event.target;
-    event.preventDefault();
-    if (target.tagName == 'A') scroll(target);
-  });
+  // menu.addEventListener('click', (event) => {
+  //   let target = event.target;
+  //   event.preventDefault();
+  //   if (target.tagName == 'A') scroll(target);
+  // });
 
-  function scroll(target) {
-    let scrollTo = document.querySelector(target.getAttribute('href')).offsetTop - window.pageYOffset;
-    window.scrollBy({
-      top: scrollTo,
-      left: 0,
-      behavior: 'smooth'
-    });
-  }
+  // function scroll(target) {
+  //   let scrollTo = document.querySelector(target.getAttribute('href')).offsetTop - window.pageYOffset;
+  //   window.scrollBy({
+  //     top: scrollTo,
+  //     left: 0,
+  //     behavior: 'smooth'
+  //   });
+  // }
 
 
 function animate(options) {
