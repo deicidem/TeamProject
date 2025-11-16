@@ -19,7 +19,7 @@
     "gulp-fontmin": "^0.7.4",
     "gulp-ftp": "^1.1.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^9.2.0",
     "gulp-rev-append": "^0.1.8",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1",
