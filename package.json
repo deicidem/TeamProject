@@ -11,7 +11,7 @@
   "devDependencies": {
     "@aquafadas/gulp-php-minify": "^0.3.1",
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
+    "gulp": "^5.0.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
